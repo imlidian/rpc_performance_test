@@ -16,87 +16,99 @@
   ~ limitations under the License.
   -->
 
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-  xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.apache.servicecomb.demo</groupId>
-    <artifactId>demo-pojo</artifactId>
-    <version>1.0.0-m2-SNAPSHOT</version>
-  </parent>
-  <artifactId>pojo-client</artifactId>
-  <name>Java Chassis::Demo::POJO::Client</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <groupId>benchmark.rpc</groupId>
+    <artifactId>servicecomb-pojo-client</artifactId>
+    <modelVersion>4.0.0</modelVersion>
+    <version>round-2</version>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.apache.servicecomb.demo</groupId>
-      <artifactId>demo-schema</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.servicecomb</groupId>
-      <artifactId>provider-pojo</artifactId>
-    </dependency>
-     <dependency>
-      <groupId>org.apache.servicecomb</groupId>
-      <artifactId>transport-highway</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.servicecomb</groupId>
-      <artifactId>transport-rest-vertx</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
-    </dependency>
-     <dependency>
-      <groupId>benchmark.rpc</groupId>
-      <artifactId>benchmark-base</artifactId>
-      <version>round-1</version>
-    </dependency>
-  </dependencies>
+    <properties>
+        <java-chassis.version>1.0.0-m1</java-chassis.version>
+    </properties>
 
-  <properties>
-    <demo.main>org.apache.servicecomb.demo.pojo.client.PojoClient</demo.main>
-  </properties>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>com.github.odavid.maven.plugins</groupId>
-        <artifactId>mixin-maven-plugin</artifactId>
-        <configuration>
-          <mixins>
-            <mixin>
-              <groupId>org.apache.servicecomb.demo</groupId>
-              <artifactId>docker-run-config</artifactId>
-              <version>1.0.0-m2-SNAPSHOT</version>
-            </mixin>
-          </mixins>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-  <profiles>
-    <profile>
-      <id>docker</id>
-      <properties>
-        <demo.service.name>pojo-server</demo.service.name>
-        <demo.vm.options>
-          -Dcse.highway.address=0.0.0.0:7070
-          -Dcse.rest.address=0.0.0.0:8080
-        </demo.vm.options>
-      </properties>
-      <build>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.servicecomb</groupId>
+                <artifactId>java-chassis-dependencies</artifactId>
+                <version>${java-chassis.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.servicecomb</groupId>
+            <artifactId>transport-rest-vertx</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.servicecomb</groupId>
+            <artifactId>transport-highway</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.servicecomb</groupId>
+            <artifactId>provider-pojo</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>benchmark.rpc</groupId>
+            <artifactId>benchmark-base</artifactId>
+            <version>round-1</version>
+        </dependency>
+    </dependencies>
+
+    <!--for package and deploy-->
+    <build>
         <plugins>
-          <plugin>
-            <groupId>io.fabric8</groupId>
-            <artifactId>docker-maven-plugin</artifactId>
-          </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <!--change to your main class-->
+                            <mainClass>org.apache.servicecomb.demo.pojo.client.PojoClient</mainClass>
+                        </manifest>
+                        <manifestEntries>
+                            <Class-Path>. </Class-Path>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>target/lib</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
         </plugins>
-      </build>
-    </profile>
-  </profiles>
+    </build>
+
 </project>
