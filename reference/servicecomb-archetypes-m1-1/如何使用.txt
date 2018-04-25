@@ -1,0 +1,6 @@
+README.md中有详细说明。
+1.安装：
+进入对应的目录下，执行mvn install，之后对应的archetype就会安装到本地repo库中
+
+2.使用：
+README.md中有如何通过IDE或命令行的方式创建项目，版本为1.0.0-m1，使用的Java Chassis版本也是1.0.0-m1
