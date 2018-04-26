@@ -75,7 +75,7 @@
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
                             <!--change to your main class-->
-                            <mainClass>org.apache.servicecomb.demo.pojo.client.PojoClient</mainClass>
+                            <mainClass>org.apache.servicecomb.demo.pojo.client.Client</mainClass>
                         </manifest>
                         <manifestEntries>
                             <Class-Path>. </Class-Path>

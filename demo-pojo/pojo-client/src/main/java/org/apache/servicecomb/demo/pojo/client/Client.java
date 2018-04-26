@@ -59,7 +59,7 @@ import benchmark.service.UserService;
 //        (2).Benchmark: 该状态在所有线程间共享
 @State(Scope.Benchmark)
 @Component
-public class PojoClient extends AbstractClient {
+public class Client extends AbstractClient {
 
 
 //  @BenchmarkMode(Mode.Throughput)//基准测试类型
@@ -124,21 +124,10 @@ public class PojoClient extends AbstractClient {
   }
 
   public static void main(String[] args) throws Exception {
-//    Log4jUtils.init();
-//    BeanUtils.init();
-    PojoClient client = new PojoClient();
 
-    for (int i = 0; i < 60; i++) {
-      try {
-        System.out.println(client.getUser());
-        break;
-      } catch (Exception e) {
-        Thread.sleep(1000);
-      }
-    }
 
     Options opt = new OptionsBuilder()//
-            .include(PojoClient.class.getSimpleName())//
+            .include(Client.class.getSimpleName())//
             .warmupIterations(10)// 预热的迭代次数  10 //number of times the warmup iteration should take place
             .measurementIterations(3)// 测试迭代 3    //number of times the actual iteration
             .threads(CONCURRENCY)// 线程数 32
@@ -146,6 +135,8 @@ public class PojoClient extends AbstractClient {
             .build();
 
     new Runner(opt).run();
+
+
   }
 }
 //  p
