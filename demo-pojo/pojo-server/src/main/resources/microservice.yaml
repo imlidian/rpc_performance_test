@@ -23,9 +23,9 @@ cse:
   service:
     registry:
       address: http://192.168.0.224:30100  #huaweicloud 192.168.0.224  digitalocean 192.241.216.177
-#  rest:
-#    address: 10.134.13.158:8080
-  highway:
-    address: 192.168.0.193:7070 #huaweicloud 192.168.0.193 127.0.0.1  digitalocean 10.134.17.34
+  rest:
+    address: 0.0.0.0:8080
+#  highway:
+#    address: 192.168.0.193:7070 #huaweicloud 192.168.0.193 127.0.0.1  digitalocean 10.134.17.34
 
 

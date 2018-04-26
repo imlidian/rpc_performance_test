@@ -30,6 +30,6 @@ ssh root@hwc2 "cd java ; ls ;rm $CJAR ; killall java"
 ssh root@hws "cd java ; ls ;rm $SJAR ; killall Java"
 fi
 if [ $UP = "u" -o $ALL = "a" ];then
-scp $PATH1/pojo-client/target/$CJAR root@hwc2:~/java  #hwc2
-scp $PATH1/pojo-server/target/$SJAR root@hws:~/java  #hws
+scp $PATH1/pojo-client/target/$CJAR root@hwc2:~/  #hwc2
+scp $PATH1/pojo-server/target/$SJAR root@hws:~/  #hws
 fi
