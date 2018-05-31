@@ -22,7 +22,7 @@ service_description:
 cse:
   service:
     registry:
-      address: http://192.168.0.224:30100 #huaweicloud 192.168.0.224  digitalocean 192.241.216.177
+      address: http://127.0.0.1:30100 #huaweicloud 192.168.0.224  digitalocean 192.241.216.177
   isolation:
     Consumer:
       enabled: false

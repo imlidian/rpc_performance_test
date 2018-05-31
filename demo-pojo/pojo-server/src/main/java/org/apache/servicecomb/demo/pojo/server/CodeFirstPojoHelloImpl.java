@@ -52,8 +52,8 @@ public class CodeFirstPojoHelloImpl implements UserService {
     user.setId(id);
     user.setName(new String("Doug Lea"));
     user.setSex(1);
-//    user.setBirthday( new Date(1968, 12, 8,0,0));
-   // user.setBirthday(new Date());
+    user.setBirthday( new Date(1968, 12, 8,0,0));
+    user.setBirthday(new Date());
     user.setEmail(new String("dong.lea@gmail.com"));
     user.setMobile(new String("18612345678"));
     user.setAddress(new String("北京市 中关村 中关村大街1号 鼎好大厦 1605"));
@@ -81,8 +81,8 @@ public class CodeFirstPojoHelloImpl implements UserService {
       user.setName("Doug Lea" + i);
       user.setSex(1);
       //更改
-      // user.setBirthday( new Date(1968, 12, 8,0,0));
-      //user.setBirthday(new Date());
+      user.setBirthday( new Date(1968, 12, 8,0,0));
+      user.setBirthday(new Date());
 
       user.setEmail("dong.lea@gmail.com" + i);
       user.setMobile("18612345678" + i);
@@ -91,7 +91,7 @@ public class CodeFirstPojoHelloImpl implements UserService {
       user.setStatus(1);
       user.setCreateTime(new Date());
 	  user.setUpdateTime(user.getCreateTime());
-      //user.setBirthday( user.getCreateTime());
+      user.setBirthday( user.getCreateTime());
 
       List<Integer> permissions = new ArrayList<Integer>(
               Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 19, 88, 86, 89, 90, 91, 92));
