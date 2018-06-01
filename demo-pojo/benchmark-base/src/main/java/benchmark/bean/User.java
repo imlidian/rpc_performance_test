@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
+import java.time.LocalDate;
 
 public class User implements Serializable {
 	private static final long serialVersionUID = 2566816725396650300L;
@@ -11,7 +12,7 @@ public class User implements Serializable {
 	private long id;
 	private String name;
 	private int sex;
-	private Date birthday;
+	private LocalDate birthday;
 	private String email;
 	private String mobile;
 	private String address;
@@ -45,13 +46,14 @@ public class User implements Serializable {
 		this.sex = sex;
 	}
 
-	public Date getBirthday() { return birthday; }
+	public LocalDate getBirthday() {
+		return birthday;
+	}
 
-	public void setBirthday(Date birthday) { this.birthday = birthday; }
-//
-//	public Date getnewBirthday() { return birthday; }
-//
-//	public void setnewBirthday(Date birthday) { this.birthday = birthday; }
+	public void setBirthday(LocalDate birthday) {
+		this.birthday = birthday;
+	}
+
 
 
 	public String getEmail() {

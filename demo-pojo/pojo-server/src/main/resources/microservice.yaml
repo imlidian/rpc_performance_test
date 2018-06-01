@@ -18,7 +18,7 @@
 APPLICATION_ID: codefirsttest
 service_description:
   name: codefirst
-  version: 0.0.2git
+  version: 0.0.2
 cse:
   service:
     registry:
