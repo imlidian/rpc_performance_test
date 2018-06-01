@@ -23,7 +23,7 @@
     <version>round-2</version>
 
     <properties>
-        <java-chassis.version>1.0.0-m2-SNAPSHOT</java-chassis.version>
+        <java-chassis.version>1.0.0-m1</java-chassis.version>
     </properties>
 
     <dependencyManagement>

@@ -647,3 +647,1203 @@ definitions:
 [2018-05-31 19:54:23,872/CST][Service Center Task][INFO]read MicroserviceInstanceRegisterTask status is FINISHED org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
 [2018-05-31 19:54:23,933/CST][registry-vert.x-eventloop-thread-2][INFO]watching microservice 6b34bc8464c911e89b0d0242ac110002 successfully, the chosen service center address is 127.0.0.1:30100 org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$watch$8(ServiceRegistryClientImpl.java:564)
 [2018-05-31 19:54:46,061/CST][transport-vert.x-eventloop-thread-4][INFO]Found SPI service javax.ws.rs.core.Response$StatusType, count=0. org.apache.servicecomb.foundation.common.utils.SPIServiceUtils.loadSortedService(SPIServiceUtils.java:76)
+[2018-05-31 19:56:22,490/CST][Thread-3][INFO]Closing org.springframework.context.support.ClassPathXmlApplicationContext@6442b0a6: startup date [Thu May 31 19:53:18 CST 2018]; root of context hierarchy org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:984)
+[2018-05-31 19:56:22,490/CST][Thread-4][INFO]ServiceComb is closing now... org.apache.servicecomb.core.SCBEngine.uninit(SCBEngine.java:229)
+[2018-05-31 19:56:22,491/CST][Thread-4][INFO]BootListener org.apache.servicecomb.common.rest.RestEngineSchemaListener succeed to process BEFORE_CLOSE. org.apache.servicecomb.core.SCBEngine.safeTriggerEvent(SCBEngine.java:129)
+[2018-05-31 19:56:22,492/CST][Thread-4][INFO]service center task is shutdown. org.apache.servicecomb.serviceregistry.registry.RemoteServiceRegistry.onShutdown(RemoteServiceRegistry.java:72)
+[2018-05-31 19:56:22,502/CST][Thread-4][INFO]Unregister microservice instance success. microserviceId=6b34bc8464c911e89b0d0242ac110002 instanceId=6b3ec24f64c911e89b0d0242ac110002 org.apache.servicecomb.serviceregistry.registry.AbstractServiceRegistry.unregisterInstance(AbstractServiceRegistry.java:217)
+[2018-05-31 19:56:22,502/CST][Thread-4][INFO]Closing vertx registry. org.apache.servicecomb.foundation.vertx.VertxUtils.closeVertxByName(VertxUtils.java:171)
+[2018-05-31 19:56:22,527/CST][registry-vert.x-eventloop-thread-2][ERROR]watcher connect to service center server failed, microservice 6b34bc8464c911e89b0d0242ac110002, connection is closed accidentally org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.watchErrorHandler(ServiceRegistryClientImpl.java:668)
+[2018-05-31 19:56:22,529/CST][registry-vert.x-eventloop-thread-2][INFO]read exception event, message is :connection is closed accidentally org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onExceptionEvent(ServiceCenterTask.java:71)
+[2018-05-31 19:56:22,538/CST][registry-vert.x-eventloop-thread-8][INFO]Success to close vertx registry. org.apache.servicecomb.foundation.vertx.VertxUtils.lambda$closeVertxByName$2(VertxUtils.java:182)
+[2018-05-31 19:56:22,538/CST][Thread-4][INFO]Closing vertx config-center. org.apache.servicecomb.foundation.vertx.VertxUtils.closeVertxByName(VertxUtils.java:171)
+[2018-05-31 19:56:22,538/CST][Thread-4][INFO]Vertx config-center not exist. org.apache.servicecomb.foundation.vertx.VertxUtils.closeVertxByName(VertxUtils.java:175)
+[2018-05-31 19:56:22,567/CST][Thread-4][INFO]Closing vertx transport. org.apache.servicecomb.foundation.vertx.VertxUtils.closeVertxByName(VertxUtils.java:171)
+[2018-05-31 19:56:22,575/CST][transport-vert.x-eventloop-thread-8][INFO]Success to close vertx transport. org.apache.servicecomb.foundation.vertx.VertxUtils.lambda$closeVertxByName$2(VertxUtils.java:182)
+[2018-05-31 19:56:22,576/CST][Thread-4][INFO]BootListener org.apache.servicecomb.common.rest.RestEngineSchemaListener succeed to process AFTER_CLOSE. org.apache.servicecomb.core.SCBEngine.safeTriggerEvent(SCBEngine.java:129)
+[2018-05-31 19:56:22,576/CST][Thread-4][INFO]ServiceComb had closed org.apache.servicecomb.core.SCBEngine.uninit(SCBEngine.java:232)
+[2018-05-31 19:58:40,962/CST][main][ERROR]Can not output merged.log4j.properties,because can not write to directory of file file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-common-1.0.0-m1.jar!/config/base/log4j.properties org.apache.servicecomb.foundation.common.utils.Log4jUtils.outputFile(Log4jUtils.java:95)
+[2018-05-31 19:58:41,027/CST][main][INFO]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6442b0a6: startup date [Thu May 31 19:58:41 CST 2018]; root of context hierarchy org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582)
+[2018-05-31 19:58:41,166/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/META-INF/spring/pojo.server.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-05-31 19:58:41,336/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/transport-rest-client-1.0.0-m1.jar!/META-INF/spring/cse.transport.rest.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-05-31 19:58:41,379/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/java-chassis-core-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-05-31 19:58:42,053/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-config-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-05-31 19:58:42,088/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-vertx-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-05-31 19:58:42,121/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-common-1.0.0-m1.jar!/META-INF/spring/common.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-05-31 19:58:42,149/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-metrics-1.0.0-m1.jar!/META-INF/spring/metrics.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-05-31 19:58:42,577/CST][main][WARN]No URLs will be polled as dynamic configuration sources. com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121)
+[2018-05-31 19:58:42,578/CST][main][INFO]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath. com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:122)
+[2018-05-31 19:58:42,589/CST][main][INFO]create dynamic config: org.apache.servicecomb.config.ConfigUtil.createDynamicConfig(ConfigUtil.java:169)
+[2018-05-31 19:58:42,673/CST][main][INFO]create local config: org.apache.servicecomb.config.ConfigUtil.createLocalConfig(ConfigUtil.java:87)
+[2018-05-31 19:58:42,674/CST][main][INFO] jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/microservice.yaml. org.apache.servicecomb.config.ConfigUtil.createLocalConfig(ConfigUtil.java:89)
+[2018-05-31 19:58:42,699/CST][main][INFO]Can not get the SPI service, the interface type is: interface org.apache.servicecomb.config.spi.ConfigCenterConfigurationSource org.apache.servicecomb.foundation.common.utils.SPIServiceUtils.getTargetService(SPIServiceUtils.java:54)
+[2018-05-31 19:58:42,699/CST][main][INFO]config center SPI service can not find, skip to load configuration from config center org.apache.servicecomb.config.ConfigUtil.createConfigFromConfigCenter(ConfigUtil.java:154)
+[2018-05-31 19:58:43,163/CST][main][INFO]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:155)
+[2018-05-31 19:58:43,633/CST][main][INFO]Found swagger generator context: org.apache.servicecomb.swagger.generator.pojo.PojoSwaggerGeneratorContext org.apache.servicecomb.swagger.generator.core.CompositeSwaggerGeneratorContext.<init>(CompositeSwaggerGeneratorContext.java:39)
+[2018-05-31 19:58:43,650/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.CseResponseProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-05-31 19:58:43,651/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.CompletableFutureProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-05-31 19:58:43,652/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.DefaultProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-05-31 19:58:43,655/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.CseResponseConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-05-31 19:58:43,685/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.CompletableFutureConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-05-31 19:58:43,685/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.DefaultConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-05-31 19:58:43,809/CST][main][INFO]load microservice config, name=codefirst, paths=[jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/microservice.yaml] org.apache.servicecomb.serviceregistry.definition.MicroserviceDefinition.logConfigPath(MicroserviceDefinition.java:142)
+[2018-05-31 19:58:43,864/CST][main][INFO]It is running in the normal mode, a separated service registry is required org.apache.servicecomb.serviceregistry.registry.ServiceRegistryFactory.create(ServiceRegistryFactory.java:81)
+[2018-05-31 19:58:43,898/CST][main][INFO]add network interface name:wc6,host address:169.254.80.44 org.apache.servicecomb.foundation.common.net.NetUtils.doGetIpv4AddressFromNetworkInterface(NetUtils.java:114)
+[2018-05-31 19:58:43,899/CST][main][INFO]add network interface name:en1,host address:192.168.4.100 org.apache.servicecomb.foundation.common.net.NetUtils.doGetIpv4AddressFromNetworkInterface(NetUtils.java:114)
+[2018-05-31 19:58:43,899/CST][main][INFO]add network interface name:en0,host address:169.254.157.195 org.apache.servicecomb.foundation.common.net.NetUtils.doGetIpv4AddressFromNetworkInterface(NetUtils.java:114)
+[2018-05-31 19:58:44,035/CST][main][INFO]add host name from localhost:DeanMacbook.local,host address:169.254.157.195 org.apache.servicecomb.foundation.common.net.NetUtils.<clinit>(NetUtils.java:72)
+[2018-05-31 19:58:44,901/CST][main][INFO]executor group 2, thread per group 4. org.apache.servicecomb.core.executor.FixedThreadExecutor.<init>(FixedThreadExecutor.java:54)
+[2018-05-31 19:58:45,164/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.existUser.email in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-05-31 19:58:45,185/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.getUser.id in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-05-31 19:58:45,188/CST][main][INFO]generate benchmark.bean.Page_benchmark.bean.User_ in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-05-31 19:58:45,192/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.listUser.pageNo in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-05-31 19:58:45,236/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-05-31 19:58:45,402/CST][main][INFO]generate swagger for codefirsttest/codefirst/codeFirstHello, swagger: ---
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "swagger definition for org.apache.servicecomb.demo.pojo.server.CodeFirstPojoHelloImpl"
+  x-java-interface: "cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf"
+basePath: "/CodeFirstPojoHelloImpl"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /existUser:
+    post:
+      operationId: "existUser"
+      parameters:
+      - in: "body"
+        name: "email"
+        required: false
+        schema:
+          $ref: "#/definitions/existUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "boolean"
+  /getUser:
+    post:
+      operationId: "getUser"
+      parameters:
+      - in: "body"
+        name: "id"
+        required: false
+        schema:
+          $ref: "#/definitions/getUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/User"
+  /createUser:
+    post:
+      operationId: "createUser"
+      parameters:
+      - in: "body"
+        name: "user"
+        required: false
+        schema:
+          $ref: "#/definitions/User"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "boolean"
+  /listUser:
+    post:
+      operationId: "listUser"
+      parameters:
+      - in: "body"
+        name: "pageNo"
+        required: false
+        schema:
+          $ref: "#/definitions/listUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/PageUser"
+definitions:
+  User:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+      sex:
+        type: "integer"
+        format: "int32"
+      birthday:
+        type: "string"
+        format: "date-time"
+      email:
+        type: "string"
+      mobile:
+        type: "string"
+      address:
+        type: "string"
+      icon:
+        type: "string"
+      permissions:
+        type: "array"
+        items:
+          type: "integer"
+          format: "int32"
+      status:
+        type: "integer"
+        format: "int32"
+      createTime:
+        type: "string"
+        format: "date-time"
+      updateTime:
+        type: "string"
+        format: "date-time"
+    x-java-class: "benchmark.bean.User"
+  existUserBody:
+    type: "object"
+    properties:
+      email:
+        type: "string"
+  getUserBody:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+  Page:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+      total:
+        type: "integer"
+        format: "int32"
+      result:
+        type: "array"
+        items:
+          type: "object"
+    x-java-class: "benchmark.bean.Page"
+  PageUser:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+      total:
+        type: "integer"
+        format: "int32"
+      result:
+        type: "array"
+        items:
+          $ref: "#/definitions/User"
+    x-java-class: "benchmark.bean.Page<benchmark.bean.User>"
+  listUserBody:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+ org.apache.servicecomb.core.definition.schema.ProducerSchemaFactory.createSchema(ProducerSchemaFactory.java:114)
+[2018-05-31 19:58:45,407/CST][main][INFO]register schema codefirsttest/codefirst/codeFirstHello org.apache.servicecomb.core.definition.loader.SchemaLoader.registerSchema(SchemaLoader.java:91)
+[2018-05-31 19:58:45,421/CST][main][INFO]found DiscoveryFilter: org.apache.servicecomb.serviceregistry.discovery.DiscoveryTree.sort(DiscoveryTree.java:53)
+[2018-05-31 19:58:45,422/CST][main][INFO]DiscoveryFilter org.apache.servicecomb.core.filter.EndpointDiscoveryFilter. org.apache.servicecomb.serviceregistry.discovery.DiscoveryTree.sort(DiscoveryTree.java:55)
+[2018-05-31 19:58:45,474/CST][main][WARN]address /0.0.0.0:8080, auto select a host address to publish 169.254.157.195:8080, maybe not the correct one org.apache.servicecomb.serviceregistry.RegistryUtils.genPublishIpPort(RegistryUtils.java:181)
+[2018-05-31 19:58:45,485/CST][main][INFO]choose org.apache.servicecomb.transport.rest.vertx.VertxRestTransport for rest. org.apache.servicecomb.core.transport.TransportManager.chooseOneTransport(TransportManager.java:84)
+[2018-05-31 19:58:45,485/CST][main][INFO]choose org.apache.servicecomb.transport.highway.HighwayTransport for highway. org.apache.servicecomb.core.transport.TransportManager.chooseOneTransport(TransportManager.java:84)
+[2018-05-31 19:58:45,528/CST][transport-vert.x-eventloop-thread-2][INFO]Found HttpServerFilter: org.apache.servicecomb.common.rest.filter.inner.ServerRestArgsFilter. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.<init>(AbstractVertxHttpDispatcher.java:40)
+[2018-05-31 19:58:45,529/CST][transport-vert.x-eventloop-thread-2][INFO]Found HttpServerFilter: org.apache.servicecomb.common.rest.filter.tracing.TracingFilter. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.<init>(AbstractVertxHttpDispatcher.java:40)
+[2018-05-31 19:58:45,531/CST][transport-vert.x-eventloop-thread-2][INFO]init vertx http dispatcher org.apache.servicecomb.transport.rest.vertx.VertxRestDispatcher org.apache.servicecomb.transport.rest.vertx.RestServerVerticle.initDispatcher(RestServerVerticle.java:97)
+[2018-05-31 19:58:45,536/CST][transport-vert.x-eventloop-thread-2][INFO]set uploads directory to null. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.createBodyHandler(AbstractVertxHttpDispatcher.java:53)
+[2018-05-31 19:58:45,682/CST][transport-vert.x-eventloop-thread-2][INFO]rest listen success. address=0.0.0.0:8080 org.apache.servicecomb.transport.rest.vertx.RestServerVerticle.lambda$startListen$0(RestServerVerticle.java:105)
+[2018-05-31 19:58:45,683/CST][main][INFO]endpoint to publish: rest://169.254.157.195:8080 org.apache.servicecomb.core.transport.TransportManager.init(TransportManager.java:58)
+[2018-05-31 19:58:45,704/CST][transport-vert.x-eventloop-thread-6][WARN]highway listen address is not configured, will not listen. org.apache.servicecomb.transport.highway.HighwayServerVerticle.startListen(HighwayServerVerticle.java:64)
+[2018-05-31 19:58:45,723/CST][main][INFO]add schema to service paths. codefirsttest:codefirst:codeFirstHello. org.apache.servicecomb.common.rest.locator.ServicePathManager.addSchema(ServicePathManager.java:91)
+[2018-05-31 19:58:45,724/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/getUser/], method=[POST], produces=[application/json]}" onto public abstract benchmark.bean.User cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.getUser(cse.gen.codefirsttest.codefirst.codeFirstHello.getUser.id) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-05-31 19:58:45,725/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/createUser/], method=[POST], produces=[application/json]}" onto public abstract java.lang.Boolean cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.createUser(benchmark.bean.User) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-05-31 19:58:45,725/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/existUser/], method=[POST], produces=[application/json]}" onto public abstract java.lang.Boolean cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.existUser(cse.gen.codefirsttest.codefirst.codeFirstHello.existUser.email) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-05-31 19:58:45,752/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/listUser/], method=[POST], produces=[application/json]}" onto public abstract benchmark.bean.Page cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.listUser(cse.gen.codefirsttest.codefirst.codeFirstHello.listUser.pageNo) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-05-31 19:58:45,756/CST][main][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-05-31 19:58:45,762/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-05-31 19:58:45,800/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-05-31 19:58:45,801/CST][main][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-05-31 19:58:45,803/CST][main][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-05-31 19:59:15,808/CST][Service Center Task][WARN]sc task interval changed from -1 to 30 org.apache.servicecomb.serviceregistry.task.ServiceCenterTaskMonitor.beginCycle(ServiceCenterTaskMonitor.java:39)
+[2018-05-31 19:59:15,809/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-05-31 19:59:15,813/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-05-31 19:59:15,818/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-05-31 19:59:15,819/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-05-31 19:59:15,820/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-05-31 19:59:32,114/CST][Thread-4][INFO]Closing org.springframework.context.support.ClassPathXmlApplicationContext@6442b0a6: startup date [Thu May 31 19:58:41 CST 2018]; root of context hierarchy org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:987)
+[2018-05-31 19:59:32,114/CST][Thread-3][WARN]handler chain is shutting down org.apache.servicecomb.core.handler.ShutdownHookHandler.run(ShutdownHookHandler.java:84)
+[2018-05-31 19:59:32,115/CST][Thread-3][WARN]handler chain is shut down org.apache.servicecomb.core.handler.ShutdownHookHandler.run(ShutdownHookHandler.java:95)
+[2018-05-31 19:59:32,116/CST][Thread-4][WARN]cse is closing now... org.apache.servicecomb.core.CseApplicationListener.onApplicationEvent(CseApplicationListener.java:149)
+[2018-05-31 19:59:32,117/CST][Thread-4][INFO]service center task is shutdown. org.apache.servicecomb.serviceregistry.registry.RemoteServiceRegistry.onShutdown(RemoteServiceRegistry.java:72)
+[2018-05-31 19:59:32,123/CST][Thread-4][WARN]Bad Request org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.unregisterMicroserviceInstance(ServiceRegistryClientImpl.java:471)
+[2018-05-31 19:59:32,123/CST][Thread-4][ERROR]Unregister microservice instance failed. microserviceId=null instanceId=null org.apache.servicecomb.serviceregistry.registry.AbstractServiceRegistry.unregisterInstance(AbstractServiceRegistry.java:232)
+[2018-05-31 20:00:53,574/CST][main][ERROR]Can not output merged.log4j.properties,because can not write to directory of file file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-common-1.0.0-m1.jar!/config/base/log4j.properties org.apache.servicecomb.foundation.common.utils.Log4jUtils.outputFile(Log4jUtils.java:95)
+[2018-05-31 20:00:53,630/CST][main][INFO]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6442b0a6: startup date [Thu May 31 20:00:53 CST 2018]; root of context hierarchy org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582)
+[2018-05-31 20:00:53,732/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/META-INF/spring/pojo.server.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-05-31 20:00:53,897/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/transport-rest-client-1.0.0-m1.jar!/META-INF/spring/cse.transport.rest.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-05-31 20:00:53,947/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/java-chassis-core-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-05-31 20:00:54,731/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-config-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-05-31 20:00:54,763/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-vertx-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-05-31 20:00:54,792/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-common-1.0.0-m1.jar!/META-INF/spring/common.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-05-31 20:00:54,818/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-metrics-1.0.0-m1.jar!/META-INF/spring/metrics.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-05-31 20:00:55,239/CST][main][WARN]No URLs will be polled as dynamic configuration sources. com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121)
+[2018-05-31 20:00:55,240/CST][main][INFO]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath. com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:122)
+[2018-05-31 20:00:55,249/CST][main][INFO]create dynamic config: org.apache.servicecomb.config.ConfigUtil.createDynamicConfig(ConfigUtil.java:169)
+[2018-05-31 20:00:55,343/CST][main][INFO]create local config: org.apache.servicecomb.config.ConfigUtil.createLocalConfig(ConfigUtil.java:87)
+[2018-05-31 20:00:55,344/CST][main][INFO] jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/microservice.yaml. org.apache.servicecomb.config.ConfigUtil.createLocalConfig(ConfigUtil.java:89)
+[2018-05-31 20:00:55,367/CST][main][INFO]Can not get the SPI service, the interface type is: interface org.apache.servicecomb.config.spi.ConfigCenterConfigurationSource org.apache.servicecomb.foundation.common.utils.SPIServiceUtils.getTargetService(SPIServiceUtils.java:54)
+[2018-05-31 20:00:55,367/CST][main][INFO]config center SPI service can not find, skip to load configuration from config center org.apache.servicecomb.config.ConfigUtil.createConfigFromConfigCenter(ConfigUtil.java:154)
+[2018-05-31 20:00:55,909/CST][main][INFO]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:155)
+[2018-05-31 20:00:56,442/CST][main][INFO]Found swagger generator context: org.apache.servicecomb.swagger.generator.pojo.PojoSwaggerGeneratorContext org.apache.servicecomb.swagger.generator.core.CompositeSwaggerGeneratorContext.<init>(CompositeSwaggerGeneratorContext.java:39)
+[2018-05-31 20:00:56,456/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.CseResponseProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-05-31 20:00:56,457/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.CompletableFutureProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-05-31 20:00:56,457/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.DefaultProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-05-31 20:00:56,463/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.CseResponseConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-05-31 20:00:56,464/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.CompletableFutureConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-05-31 20:00:56,464/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.DefaultConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-05-31 20:00:56,596/CST][main][INFO]load microservice config, name=codefirst, paths=[jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/microservice.yaml] org.apache.servicecomb.serviceregistry.definition.MicroserviceDefinition.logConfigPath(MicroserviceDefinition.java:142)
+[2018-05-31 20:00:56,653/CST][main][INFO]It is running in the normal mode, a separated service registry is required org.apache.servicecomb.serviceregistry.registry.ServiceRegistryFactory.create(ServiceRegistryFactory.java:81)
+[2018-05-31 20:00:56,676/CST][main][INFO]add network interface name:wc6,host address:169.254.80.44 org.apache.servicecomb.foundation.common.net.NetUtils.doGetIpv4AddressFromNetworkInterface(NetUtils.java:114)
+[2018-05-31 20:00:56,676/CST][main][INFO]add network interface name:en1,host address:192.168.4.100 org.apache.servicecomb.foundation.common.net.NetUtils.doGetIpv4AddressFromNetworkInterface(NetUtils.java:114)
+[2018-05-31 20:00:56,677/CST][main][INFO]add network interface name:en0,host address:169.254.157.195 org.apache.servicecomb.foundation.common.net.NetUtils.doGetIpv4AddressFromNetworkInterface(NetUtils.java:114)
+[2018-05-31 20:00:56,856/CST][main][INFO]add host name from localhost:DeanMacbook.local,host address:169.254.157.195 org.apache.servicecomb.foundation.common.net.NetUtils.<clinit>(NetUtils.java:72)
+[2018-05-31 20:00:57,720/CST][main][INFO]executor group 2, thread per group 4. org.apache.servicecomb.core.executor.FixedThreadExecutor.<init>(FixedThreadExecutor.java:54)
+[2018-05-31 20:00:58,003/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.existUser.email in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-05-31 20:00:58,021/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.getUser.id in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-05-31 20:00:58,024/CST][main][INFO]generate benchmark.bean.Page_benchmark.bean.User_ in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-05-31 20:00:58,028/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.listUser.pageNo in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-05-31 20:00:58,074/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-05-31 20:00:58,283/CST][main][INFO]generate swagger for codefirsttest/codefirst/codeFirstHello, swagger: ---
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "swagger definition for org.apache.servicecomb.demo.pojo.server.CodeFirstPojoHelloImpl"
+  x-java-interface: "cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf"
+basePath: "/CodeFirstPojoHelloImpl"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /existUser:
+    post:
+      operationId: "existUser"
+      parameters:
+      - in: "body"
+        name: "email"
+        required: false
+        schema:
+          $ref: "#/definitions/existUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "boolean"
+  /getUser:
+    post:
+      operationId: "getUser"
+      parameters:
+      - in: "body"
+        name: "id"
+        required: false
+        schema:
+          $ref: "#/definitions/getUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/User"
+  /createUser:
+    post:
+      operationId: "createUser"
+      parameters:
+      - in: "body"
+        name: "user"
+        required: false
+        schema:
+          $ref: "#/definitions/User"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "boolean"
+  /listUser:
+    post:
+      operationId: "listUser"
+      parameters:
+      - in: "body"
+        name: "pageNo"
+        required: false
+        schema:
+          $ref: "#/definitions/listUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/PageUser"
+definitions:
+  User:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+      sex:
+        type: "integer"
+        format: "int32"
+      birthday:
+        type: "string"
+        format: "date-time"
+      email:
+        type: "string"
+      mobile:
+        type: "string"
+      address:
+        type: "string"
+      icon:
+        type: "string"
+      permissions:
+        type: "array"
+        items:
+          type: "integer"
+          format: "int32"
+      status:
+        type: "integer"
+        format: "int32"
+      createTime:
+        type: "string"
+        format: "date-time"
+      updateTime:
+        type: "string"
+        format: "date-time"
+    x-java-class: "benchmark.bean.User"
+  existUserBody:
+    type: "object"
+    properties:
+      email:
+        type: "string"
+  getUserBody:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+  Page:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+      total:
+        type: "integer"
+        format: "int32"
+      result:
+        type: "array"
+        items:
+          type: "object"
+    x-java-class: "benchmark.bean.Page"
+  PageUser:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+      total:
+        type: "integer"
+        format: "int32"
+      result:
+        type: "array"
+        items:
+          $ref: "#/definitions/User"
+    x-java-class: "benchmark.bean.Page<benchmark.bean.User>"
+  listUserBody:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+ org.apache.servicecomb.core.definition.schema.ProducerSchemaFactory.createSchema(ProducerSchemaFactory.java:114)
+[2018-05-31 20:00:58,290/CST][main][INFO]register schema codefirsttest/codefirst/codeFirstHello org.apache.servicecomb.core.definition.loader.SchemaLoader.registerSchema(SchemaLoader.java:91)
+[2018-05-31 20:00:58,307/CST][main][INFO]found DiscoveryFilter: org.apache.servicecomb.serviceregistry.discovery.DiscoveryTree.sort(DiscoveryTree.java:53)
+[2018-05-31 20:00:58,307/CST][main][INFO]DiscoveryFilter org.apache.servicecomb.core.filter.EndpointDiscoveryFilter. org.apache.servicecomb.serviceregistry.discovery.DiscoveryTree.sort(DiscoveryTree.java:55)
+[2018-05-31 20:00:58,363/CST][main][WARN]address /0.0.0.0:8080, auto select a host address to publish 169.254.157.195:8080, maybe not the correct one org.apache.servicecomb.serviceregistry.RegistryUtils.genPublishIpPort(RegistryUtils.java:181)
+[2018-05-31 20:00:58,381/CST][main][INFO]choose org.apache.servicecomb.transport.rest.vertx.VertxRestTransport for rest. org.apache.servicecomb.core.transport.TransportManager.chooseOneTransport(TransportManager.java:84)
+[2018-05-31 20:00:58,382/CST][main][INFO]choose org.apache.servicecomb.transport.highway.HighwayTransport for highway. org.apache.servicecomb.core.transport.TransportManager.chooseOneTransport(TransportManager.java:84)
+[2018-05-31 20:00:58,426/CST][transport-vert.x-eventloop-thread-2][INFO]Found HttpServerFilter: org.apache.servicecomb.common.rest.filter.inner.ServerRestArgsFilter. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.<init>(AbstractVertxHttpDispatcher.java:40)
+[2018-05-31 20:00:58,427/CST][transport-vert.x-eventloop-thread-2][INFO]Found HttpServerFilter: org.apache.servicecomb.common.rest.filter.tracing.TracingFilter. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.<init>(AbstractVertxHttpDispatcher.java:40)
+[2018-05-31 20:00:58,428/CST][transport-vert.x-eventloop-thread-2][INFO]init vertx http dispatcher org.apache.servicecomb.transport.rest.vertx.VertxRestDispatcher org.apache.servicecomb.transport.rest.vertx.RestServerVerticle.initDispatcher(RestServerVerticle.java:97)
+[2018-05-31 20:00:58,434/CST][transport-vert.x-eventloop-thread-2][INFO]set uploads directory to null. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.createBodyHandler(AbstractVertxHttpDispatcher.java:53)
+[2018-05-31 20:00:58,568/CST][transport-vert.x-eventloop-thread-2][INFO]rest listen success. address=0.0.0.0:8080 org.apache.servicecomb.transport.rest.vertx.RestServerVerticle.lambda$startListen$0(RestServerVerticle.java:105)
+[2018-05-31 20:00:58,569/CST][main][INFO]endpoint to publish: rest://169.254.157.195:8080 org.apache.servicecomb.core.transport.TransportManager.init(TransportManager.java:58)
+[2018-05-31 20:00:58,586/CST][transport-vert.x-eventloop-thread-6][WARN]highway listen address is not configured, will not listen. org.apache.servicecomb.transport.highway.HighwayServerVerticle.startListen(HighwayServerVerticle.java:64)
+[2018-05-31 20:00:58,606/CST][main][INFO]add schema to service paths. codefirsttest:codefirst:codeFirstHello. org.apache.servicecomb.common.rest.locator.ServicePathManager.addSchema(ServicePathManager.java:91)
+[2018-05-31 20:00:58,608/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/getUser/], method=[POST], produces=[application/json]}" onto public abstract benchmark.bean.User cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.getUser(cse.gen.codefirsttest.codefirst.codeFirstHello.getUser.id) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-05-31 20:00:58,609/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/createUser/], method=[POST], produces=[application/json]}" onto public abstract java.lang.Boolean cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.createUser(benchmark.bean.User) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-05-31 20:00:58,609/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/existUser/], method=[POST], produces=[application/json]}" onto public abstract java.lang.Boolean cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.existUser(cse.gen.codefirsttest.codefirst.codeFirstHello.existUser.email) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-05-31 20:00:58,650/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/listUser/], method=[POST], produces=[application/json]}" onto public abstract benchmark.bean.Page cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.listUser(cse.gen.codefirsttest.codefirst.codeFirstHello.listUser.pageNo) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-05-31 20:00:58,656/CST][main][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-05-31 20:00:58,663/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-05-31 20:00:58,702/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-05-31 20:00:58,702/CST][main][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-05-31 20:00:58,704/CST][main][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-05-31 20:01:28,709/CST][Service Center Task][WARN]sc task interval changed from -1 to 30 org.apache.servicecomb.serviceregistry.task.ServiceCenterTaskMonitor.beginCycle(ServiceCenterTaskMonitor.java:39)
+[2018-05-31 20:01:28,709/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-05-31 20:01:28,714/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-05-31 20:01:28,719/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-05-31 20:01:28,720/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-05-31 20:01:28,720/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-05-31 20:01:58,705/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-05-31 20:01:58,716/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-05-31 20:01:58,720/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-05-31 20:01:58,722/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-05-31 20:01:58,722/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-05-31 20:02:01,781/CST][Thread-4][INFO]Closing org.springframework.context.support.ClassPathXmlApplicationContext@6442b0a6: startup date [Thu May 31 20:00:53 CST 2018]; root of context hierarchy org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:987)
+[2018-05-31 20:02:01,781/CST][Thread-3][WARN]handler chain is shutting down org.apache.servicecomb.core.handler.ShutdownHookHandler.run(ShutdownHookHandler.java:84)
+[2018-05-31 20:02:01,783/CST][Thread-3][WARN]handler chain is shut down org.apache.servicecomb.core.handler.ShutdownHookHandler.run(ShutdownHookHandler.java:95)
+[2018-05-31 20:02:01,783/CST][Thread-4][WARN]cse is closing now... org.apache.servicecomb.core.CseApplicationListener.onApplicationEvent(CseApplicationListener.java:149)
+[2018-05-31 20:02:01,785/CST][Thread-4][INFO]service center task is shutdown. org.apache.servicecomb.serviceregistry.registry.RemoteServiceRegistry.onShutdown(RemoteServiceRegistry.java:72)
+[2018-05-31 20:02:01,797/CST][Thread-4][WARN]Bad Request org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.unregisterMicroserviceInstance(ServiceRegistryClientImpl.java:471)
+[2018-05-31 20:02:01,798/CST][Thread-4][ERROR]Unregister microservice instance failed. microserviceId=null instanceId=null org.apache.servicecomb.serviceregistry.registry.AbstractServiceRegistry.unregisterInstance(AbstractServiceRegistry.java:232)
+[2018-06-01 11:14:57,841/CST][main][ERROR]Can not output merged.log4j.properties,because can not write to directory of file file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-common-1.0.0-m1.jar!/config/base/log4j.properties org.apache.servicecomb.foundation.common.utils.Log4jUtils.outputFile(Log4jUtils.java:95)
+[2018-06-01 11:14:57,893/CST][main][INFO]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6442b0a6: startup date [Fri Jun 01 11:14:57 CST 2018]; root of context hierarchy org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582)
+[2018-06-01 11:14:57,989/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/META-INF/spring/pojo.server.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:14:58,129/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/transport-rest-client-1.0.0-m1.jar!/META-INF/spring/cse.transport.rest.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:14:58,172/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/java-chassis-core-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:14:58,814/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-config-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:14:58,841/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-vertx-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:14:58,875/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-common-1.0.0-m1.jar!/META-INF/spring/common.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:14:58,901/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-metrics-1.0.0-m1.jar!/META-INF/spring/metrics.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:14:59,313/CST][main][WARN]No URLs will be polled as dynamic configuration sources. com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121)
+[2018-06-01 11:14:59,314/CST][main][INFO]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath. com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:122)
+[2018-06-01 11:14:59,324/CST][main][INFO]create dynamic config: org.apache.servicecomb.config.ConfigUtil.createDynamicConfig(ConfigUtil.java:169)
+[2018-06-01 11:14:59,404/CST][main][INFO]create local config: org.apache.servicecomb.config.ConfigUtil.createLocalConfig(ConfigUtil.java:87)
+[2018-06-01 11:14:59,404/CST][main][INFO] jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/microservice.yaml. org.apache.servicecomb.config.ConfigUtil.createLocalConfig(ConfigUtil.java:89)
+[2018-06-01 11:14:59,421/CST][main][INFO]Can not get the SPI service, the interface type is: interface org.apache.servicecomb.config.spi.ConfigCenterConfigurationSource org.apache.servicecomb.foundation.common.utils.SPIServiceUtils.getTargetService(SPIServiceUtils.java:54)
+[2018-06-01 11:14:59,422/CST][main][INFO]config center SPI service can not find, skip to load configuration from config center org.apache.servicecomb.config.ConfigUtil.createConfigFromConfigCenter(ConfigUtil.java:154)
+[2018-06-01 11:14:59,857/CST][main][INFO]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:155)
+[2018-06-01 11:15:00,316/CST][main][INFO]Found swagger generator context: org.apache.servicecomb.swagger.generator.pojo.PojoSwaggerGeneratorContext org.apache.servicecomb.swagger.generator.core.CompositeSwaggerGeneratorContext.<init>(CompositeSwaggerGeneratorContext.java:39)
+[2018-06-01 11:15:00,334/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.CseResponseProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:15:00,335/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.CompletableFutureProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:15:00,335/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.DefaultProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:15:00,342/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.CseResponseConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:15:00,342/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.CompletableFutureConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:15:00,343/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.DefaultConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:15:00,496/CST][main][INFO]load microservice config, name=codefirst, paths=[jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/microservice.yaml] org.apache.servicecomb.serviceregistry.definition.MicroserviceDefinition.logConfigPath(MicroserviceDefinition.java:142)
+[2018-06-01 11:15:00,574/CST][main][INFO]It is running in the normal mode, a separated service registry is required org.apache.servicecomb.serviceregistry.registry.ServiceRegistryFactory.create(ServiceRegistryFactory.java:81)
+[2018-06-01 11:15:00,596/CST][main][INFO]add network interface name:wc6,host address:169.254.80.44 org.apache.servicecomb.foundation.common.net.NetUtils.doGetIpv4AddressFromNetworkInterface(NetUtils.java:114)
+[2018-06-01 11:15:00,596/CST][main][INFO]add network interface name:en1,host address:192.168.43.114 org.apache.servicecomb.foundation.common.net.NetUtils.doGetIpv4AddressFromNetworkInterface(NetUtils.java:114)
+[2018-06-01 11:15:00,606/CST][main][INFO]add host name from localhost:DeanMacbook,host address:192.168.43.114 org.apache.servicecomb.foundation.common.net.NetUtils.<clinit>(NetUtils.java:72)
+[2018-06-01 11:15:01,460/CST][main][INFO]executor group 2, thread per group 4. org.apache.servicecomb.core.executor.FixedThreadExecutor.<init>(FixedThreadExecutor.java:54)
+[2018-06-01 11:15:01,750/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.existUser.email in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:15:01,767/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.getUser.id in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:15:01,771/CST][main][INFO]generate benchmark.bean.Page_benchmark.bean.User_ in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:15:01,776/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.listUser.pageNo in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:15:01,826/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:15:02,014/CST][main][INFO]generate swagger for codefirsttest/codefirst/codeFirstHello, swagger: ---
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "swagger definition for org.apache.servicecomb.demo.pojo.server.CodeFirstPojoHelloImpl"
+  x-java-interface: "cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf"
+basePath: "/CodeFirstPojoHelloImpl"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /existUser:
+    post:
+      operationId: "existUser"
+      parameters:
+      - in: "body"
+        name: "email"
+        required: false
+        schema:
+          $ref: "#/definitions/existUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "boolean"
+  /getUser:
+    post:
+      operationId: "getUser"
+      parameters:
+      - in: "body"
+        name: "id"
+        required: false
+        schema:
+          $ref: "#/definitions/getUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/User"
+  /createUser:
+    post:
+      operationId: "createUser"
+      parameters:
+      - in: "body"
+        name: "user"
+        required: false
+        schema:
+          $ref: "#/definitions/User"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "boolean"
+  /listUser:
+    post:
+      operationId: "listUser"
+      parameters:
+      - in: "body"
+        name: "pageNo"
+        required: false
+        schema:
+          $ref: "#/definitions/listUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/PageUser"
+definitions:
+  User:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+      sex:
+        type: "integer"
+        format: "int32"
+      birthday:
+        type: "string"
+        format: "date-time"
+      email:
+        type: "string"
+      mobile:
+        type: "string"
+      address:
+        type: "string"
+      icon:
+        type: "string"
+      permissions:
+        type: "array"
+        items:
+          type: "integer"
+          format: "int32"
+      status:
+        type: "integer"
+        format: "int32"
+      createTime:
+        type: "string"
+        format: "date-time"
+      updateTime:
+        type: "string"
+        format: "date-time"
+    x-java-class: "benchmark.bean.User"
+  existUserBody:
+    type: "object"
+    properties:
+      email:
+        type: "string"
+  getUserBody:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+  Page:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+      total:
+        type: "integer"
+        format: "int32"
+      result:
+        type: "array"
+        items:
+          type: "object"
+    x-java-class: "benchmark.bean.Page"
+  PageUser:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+      total:
+        type: "integer"
+        format: "int32"
+      result:
+        type: "array"
+        items:
+          $ref: "#/definitions/User"
+    x-java-class: "benchmark.bean.Page<benchmark.bean.User>"
+  listUserBody:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+ org.apache.servicecomb.core.definition.schema.ProducerSchemaFactory.createSchema(ProducerSchemaFactory.java:114)
+[2018-06-01 11:15:02,019/CST][main][INFO]register schema codefirsttest/codefirst/codeFirstHello org.apache.servicecomb.core.definition.loader.SchemaLoader.registerSchema(SchemaLoader.java:91)
+[2018-06-01 11:15:02,032/CST][main][INFO]found DiscoveryFilter: org.apache.servicecomb.serviceregistry.discovery.DiscoveryTree.sort(DiscoveryTree.java:53)
+[2018-06-01 11:15:02,033/CST][main][INFO]DiscoveryFilter org.apache.servicecomb.core.filter.EndpointDiscoveryFilter. org.apache.servicecomb.serviceregistry.discovery.DiscoveryTree.sort(DiscoveryTree.java:55)
+[2018-06-01 11:15:02,088/CST][main][WARN]address /0.0.0.0:8080, auto select a host address to publish 192.168.43.114:8080, maybe not the correct one org.apache.servicecomb.serviceregistry.RegistryUtils.genPublishIpPort(RegistryUtils.java:181)
+[2018-06-01 11:15:02,104/CST][main][INFO]choose org.apache.servicecomb.transport.rest.vertx.VertxRestTransport for rest. org.apache.servicecomb.core.transport.TransportManager.chooseOneTransport(TransportManager.java:84)
+[2018-06-01 11:15:02,105/CST][main][INFO]choose org.apache.servicecomb.transport.highway.HighwayTransport for highway. org.apache.servicecomb.core.transport.TransportManager.chooseOneTransport(TransportManager.java:84)
+[2018-06-01 11:15:02,149/CST][transport-vert.x-eventloop-thread-2][INFO]Found HttpServerFilter: org.apache.servicecomb.common.rest.filter.inner.ServerRestArgsFilter. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.<init>(AbstractVertxHttpDispatcher.java:40)
+[2018-06-01 11:15:02,150/CST][transport-vert.x-eventloop-thread-2][INFO]Found HttpServerFilter: org.apache.servicecomb.common.rest.filter.tracing.TracingFilter. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.<init>(AbstractVertxHttpDispatcher.java:40)
+[2018-06-01 11:15:02,152/CST][transport-vert.x-eventloop-thread-2][INFO]init vertx http dispatcher org.apache.servicecomb.transport.rest.vertx.VertxRestDispatcher org.apache.servicecomb.transport.rest.vertx.RestServerVerticle.initDispatcher(RestServerVerticle.java:97)
+[2018-06-01 11:15:02,158/CST][transport-vert.x-eventloop-thread-2][INFO]set uploads directory to null. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.createBodyHandler(AbstractVertxHttpDispatcher.java:53)
+[2018-06-01 11:15:02,303/CST][transport-vert.x-eventloop-thread-2][INFO]rest listen success. address=0.0.0.0:8080 org.apache.servicecomb.transport.rest.vertx.RestServerVerticle.lambda$startListen$0(RestServerVerticle.java:105)
+[2018-06-01 11:15:02,304/CST][main][INFO]endpoint to publish: rest://192.168.43.114:8080 org.apache.servicecomb.core.transport.TransportManager.init(TransportManager.java:58)
+[2018-06-01 11:15:02,317/CST][transport-vert.x-eventloop-thread-6][WARN]highway listen address is not configured, will not listen. org.apache.servicecomb.transport.highway.HighwayServerVerticle.startListen(HighwayServerVerticle.java:64)
+[2018-06-01 11:15:02,333/CST][main][INFO]add schema to service paths. codefirsttest:codefirst:codeFirstHello. org.apache.servicecomb.common.rest.locator.ServicePathManager.addSchema(ServicePathManager.java:91)
+[2018-06-01 11:15:02,334/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/getUser/], method=[POST], produces=[application/json]}" onto public abstract benchmark.bean.User cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.getUser(cse.gen.codefirsttest.codefirst.codeFirstHello.getUser.id) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-06-01 11:15:02,335/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/createUser/], method=[POST], produces=[application/json]}" onto public abstract java.lang.Boolean cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.createUser(benchmark.bean.User) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-06-01 11:15:02,335/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/existUser/], method=[POST], produces=[application/json]}" onto public abstract java.lang.Boolean cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.existUser(cse.gen.codefirsttest.codefirst.codeFirstHello.existUser.email) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-06-01 11:15:02,348/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/listUser/], method=[POST], produces=[application/json]}" onto public abstract benchmark.bean.Page cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.listUser(cse.gen.codefirsttest.codefirst.codeFirstHello.listUser.pageNo) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-06-01 11:15:02,353/CST][main][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:15:02,360/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:15:02,401/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:15:02,401/CST][main][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:15:02,402/CST][main][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:15:06,444/CST][Thread-4][INFO]Closing org.springframework.context.support.ClassPathXmlApplicationContext@6442b0a6: startup date [Fri Jun 01 11:14:57 CST 2018]; root of context hierarchy org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:987)
+[2018-06-01 11:15:06,444/CST][Thread-3][WARN]handler chain is shutting down org.apache.servicecomb.core.handler.ShutdownHookHandler.run(ShutdownHookHandler.java:84)
+[2018-06-01 11:15:06,444/CST][Thread-3][WARN]handler chain is shut down org.apache.servicecomb.core.handler.ShutdownHookHandler.run(ShutdownHookHandler.java:95)
+[2018-06-01 11:15:06,445/CST][Thread-4][WARN]cse is closing now... org.apache.servicecomb.core.CseApplicationListener.onApplicationEvent(CseApplicationListener.java:149)
+[2018-06-01 11:15:06,445/CST][Thread-4][INFO]service center task is shutdown. org.apache.servicecomb.serviceregistry.registry.RemoteServiceRegistry.onShutdown(RemoteServiceRegistry.java:72)
+[2018-06-01 11:15:06,452/CST][Thread-4][WARN]Bad Request org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.unregisterMicroserviceInstance(ServiceRegistryClientImpl.java:471)
+[2018-06-01 11:15:06,452/CST][Thread-4][ERROR]Unregister microservice instance failed. microserviceId=null instanceId=null org.apache.servicecomb.serviceregistry.registry.AbstractServiceRegistry.unregisterInstance(AbstractServiceRegistry.java:232)
+[2018-06-01 11:15:33,950/CST][main][ERROR]Can not output merged.log4j.properties,because can not write to directory of file file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-common-1.0.0-m1.jar!/config/base/log4j.properties org.apache.servicecomb.foundation.common.utils.Log4jUtils.outputFile(Log4jUtils.java:95)
+[2018-06-01 11:15:34,117/CST][main][INFO]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6442b0a6: startup date [Fri Jun 01 11:15:34 CST 2018]; root of context hierarchy org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582)
+[2018-06-01 11:15:34,216/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/META-INF/spring/pojo.server.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:15:34,387/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/transport-rest-client-1.0.0-m1.jar!/META-INF/spring/cse.transport.rest.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:15:34,428/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/java-chassis-core-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:15:35,180/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-config-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:15:35,209/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-vertx-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:15:35,239/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-common-1.0.0-m1.jar!/META-INF/spring/common.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:15:35,276/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-metrics-1.0.0-m1.jar!/META-INF/spring/metrics.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:15:35,779/CST][main][WARN]No URLs will be polled as dynamic configuration sources. com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121)
+[2018-06-01 11:15:35,780/CST][main][INFO]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath. com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:122)
+[2018-06-01 11:15:35,787/CST][main][INFO]create dynamic config: org.apache.servicecomb.config.ConfigUtil.createDynamicConfig(ConfigUtil.java:169)
+[2018-06-01 11:15:35,866/CST][main][INFO]create local config: org.apache.servicecomb.config.ConfigUtil.createLocalConfig(ConfigUtil.java:87)
+[2018-06-01 11:15:35,867/CST][main][INFO] jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/microservice.yaml. org.apache.servicecomb.config.ConfigUtil.createLocalConfig(ConfigUtil.java:89)
+[2018-06-01 11:15:35,885/CST][main][INFO]Can not get the SPI service, the interface type is: interface org.apache.servicecomb.config.spi.ConfigCenterConfigurationSource org.apache.servicecomb.foundation.common.utils.SPIServiceUtils.getTargetService(SPIServiceUtils.java:54)
+[2018-06-01 11:15:35,885/CST][main][INFO]config center SPI service can not find, skip to load configuration from config center org.apache.servicecomb.config.ConfigUtil.createConfigFromConfigCenter(ConfigUtil.java:154)
+[2018-06-01 11:15:36,329/CST][main][INFO]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:155)
+[2018-06-01 11:15:36,788/CST][main][INFO]Found swagger generator context: org.apache.servicecomb.swagger.generator.pojo.PojoSwaggerGeneratorContext org.apache.servicecomb.swagger.generator.core.CompositeSwaggerGeneratorContext.<init>(CompositeSwaggerGeneratorContext.java:39)
+[2018-06-01 11:15:36,802/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.CseResponseProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:15:36,803/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.CompletableFutureProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:15:36,803/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.DefaultProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:15:36,808/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.CseResponseConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:15:36,830/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.CompletableFutureConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:15:36,831/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.DefaultConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:15:36,946/CST][main][INFO]load microservice config, name=codefirst, paths=[jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/microservice.yaml] org.apache.servicecomb.serviceregistry.definition.MicroserviceDefinition.logConfigPath(MicroserviceDefinition.java:142)
+[2018-06-01 11:15:37,003/CST][main][INFO]It is running in the normal mode, a separated service registry is required org.apache.servicecomb.serviceregistry.registry.ServiceRegistryFactory.create(ServiceRegistryFactory.java:81)
+[2018-06-01 11:15:37,024/CST][main][INFO]add network interface name:wc6,host address:169.254.80.44 org.apache.servicecomb.foundation.common.net.NetUtils.doGetIpv4AddressFromNetworkInterface(NetUtils.java:114)
+[2018-06-01 11:15:37,025/CST][main][INFO]add network interface name:en1,host address:192.168.43.114 org.apache.servicecomb.foundation.common.net.NetUtils.doGetIpv4AddressFromNetworkInterface(NetUtils.java:114)
+[2018-06-01 11:15:37,105/CST][main][INFO]add host name from localhost:DeanMacbook,host address:192.168.43.114 org.apache.servicecomb.foundation.common.net.NetUtils.<clinit>(NetUtils.java:72)
+[2018-06-01 11:15:37,981/CST][main][INFO]executor group 2, thread per group 4. org.apache.servicecomb.core.executor.FixedThreadExecutor.<init>(FixedThreadExecutor.java:54)
+[2018-06-01 11:15:38,279/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.existUser.email in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:15:38,296/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.getUser.id in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:15:38,299/CST][main][INFO]generate benchmark.bean.Page_benchmark.bean.User_ in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:15:38,303/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.listUser.pageNo in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:15:38,362/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:15:38,590/CST][main][INFO]generate swagger for codefirsttest/codefirst/codeFirstHello, swagger: ---
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "swagger definition for org.apache.servicecomb.demo.pojo.server.CodeFirstPojoHelloImpl"
+  x-java-interface: "cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf"
+basePath: "/CodeFirstPojoHelloImpl"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /existUser:
+    post:
+      operationId: "existUser"
+      parameters:
+      - in: "body"
+        name: "email"
+        required: false
+        schema:
+          $ref: "#/definitions/existUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "boolean"
+  /getUser:
+    post:
+      operationId: "getUser"
+      parameters:
+      - in: "body"
+        name: "id"
+        required: false
+        schema:
+          $ref: "#/definitions/getUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/User"
+  /createUser:
+    post:
+      operationId: "createUser"
+      parameters:
+      - in: "body"
+        name: "user"
+        required: false
+        schema:
+          $ref: "#/definitions/User"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "boolean"
+  /listUser:
+    post:
+      operationId: "listUser"
+      parameters:
+      - in: "body"
+        name: "pageNo"
+        required: false
+        schema:
+          $ref: "#/definitions/listUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/PageUser"
+definitions:
+  User:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+      sex:
+        type: "integer"
+        format: "int32"
+      birthday:
+        type: "string"
+        format: "date-time"
+      email:
+        type: "string"
+      mobile:
+        type: "string"
+      address:
+        type: "string"
+      icon:
+        type: "string"
+      permissions:
+        type: "array"
+        items:
+          type: "integer"
+          format: "int32"
+      status:
+        type: "integer"
+        format: "int32"
+      createTime:
+        type: "string"
+        format: "date-time"
+      updateTime:
+        type: "string"
+        format: "date-time"
+    x-java-class: "benchmark.bean.User"
+  existUserBody:
+    type: "object"
+    properties:
+      email:
+        type: "string"
+  getUserBody:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+  Page:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+      total:
+        type: "integer"
+        format: "int32"
+      result:
+        type: "array"
+        items:
+          type: "object"
+    x-java-class: "benchmark.bean.Page"
+  PageUser:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+      total:
+        type: "integer"
+        format: "int32"
+      result:
+        type: "array"
+        items:
+          $ref: "#/definitions/User"
+    x-java-class: "benchmark.bean.Page<benchmark.bean.User>"
+  listUserBody:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+ org.apache.servicecomb.core.definition.schema.ProducerSchemaFactory.createSchema(ProducerSchemaFactory.java:114)
+[2018-06-01 11:15:38,599/CST][main][INFO]register schema codefirsttest/codefirst/codeFirstHello org.apache.servicecomb.core.definition.loader.SchemaLoader.registerSchema(SchemaLoader.java:91)
+[2018-06-01 11:15:38,615/CST][main][INFO]found DiscoveryFilter: org.apache.servicecomb.serviceregistry.discovery.DiscoveryTree.sort(DiscoveryTree.java:53)
+[2018-06-01 11:15:38,616/CST][main][INFO]DiscoveryFilter org.apache.servicecomb.core.filter.EndpointDiscoveryFilter. org.apache.servicecomb.serviceregistry.discovery.DiscoveryTree.sort(DiscoveryTree.java:55)
+[2018-06-01 11:15:38,667/CST][main][WARN]address /0.0.0.0:8080, auto select a host address to publish 192.168.43.114:8080, maybe not the correct one org.apache.servicecomb.serviceregistry.RegistryUtils.genPublishIpPort(RegistryUtils.java:181)
+[2018-06-01 11:15:38,679/CST][main][INFO]choose org.apache.servicecomb.transport.rest.vertx.VertxRestTransport for rest. org.apache.servicecomb.core.transport.TransportManager.chooseOneTransport(TransportManager.java:84)
+[2018-06-01 11:15:38,680/CST][main][INFO]choose org.apache.servicecomb.transport.highway.HighwayTransport for highway. org.apache.servicecomb.core.transport.TransportManager.chooseOneTransport(TransportManager.java:84)
+[2018-06-01 11:15:38,721/CST][transport-vert.x-eventloop-thread-2][INFO]Found HttpServerFilter: org.apache.servicecomb.common.rest.filter.inner.ServerRestArgsFilter. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.<init>(AbstractVertxHttpDispatcher.java:40)
+[2018-06-01 11:15:38,722/CST][transport-vert.x-eventloop-thread-2][INFO]Found HttpServerFilter: org.apache.servicecomb.common.rest.filter.tracing.TracingFilter. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.<init>(AbstractVertxHttpDispatcher.java:40)
+[2018-06-01 11:15:38,724/CST][transport-vert.x-eventloop-thread-2][INFO]init vertx http dispatcher org.apache.servicecomb.transport.rest.vertx.VertxRestDispatcher org.apache.servicecomb.transport.rest.vertx.RestServerVerticle.initDispatcher(RestServerVerticle.java:97)
+[2018-06-01 11:15:38,729/CST][transport-vert.x-eventloop-thread-2][INFO]set uploads directory to null. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.createBodyHandler(AbstractVertxHttpDispatcher.java:53)
+[2018-06-01 11:15:38,861/CST][transport-vert.x-eventloop-thread-2][INFO]rest listen success. address=0.0.0.0:8080 org.apache.servicecomb.transport.rest.vertx.RestServerVerticle.lambda$startListen$0(RestServerVerticle.java:105)
+[2018-06-01 11:15:38,862/CST][main][INFO]endpoint to publish: rest://192.168.43.114:8080 org.apache.servicecomb.core.transport.TransportManager.init(TransportManager.java:58)
+[2018-06-01 11:15:38,878/CST][transport-vert.x-eventloop-thread-6][WARN]highway listen address is not configured, will not listen. org.apache.servicecomb.transport.highway.HighwayServerVerticle.startListen(HighwayServerVerticle.java:64)
+[2018-06-01 11:15:38,898/CST][main][INFO]add schema to service paths. codefirsttest:codefirst:codeFirstHello. org.apache.servicecomb.common.rest.locator.ServicePathManager.addSchema(ServicePathManager.java:91)
+[2018-06-01 11:15:38,899/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/getUser/], method=[POST], produces=[application/json]}" onto public abstract benchmark.bean.User cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.getUser(cse.gen.codefirsttest.codefirst.codeFirstHello.getUser.id) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-06-01 11:15:38,899/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/createUser/], method=[POST], produces=[application/json]}" onto public abstract java.lang.Boolean cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.createUser(benchmark.bean.User) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-06-01 11:15:38,900/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/existUser/], method=[POST], produces=[application/json]}" onto public abstract java.lang.Boolean cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.existUser(cse.gen.codefirsttest.codefirst.codeFirstHello.existUser.email) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-06-01 11:15:38,900/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/listUser/], method=[POST], produces=[application/json]}" onto public abstract benchmark.bean.Page cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.listUser(cse.gen.codefirsttest.codefirst.codeFirstHello.listUser.pageNo) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-06-01 11:15:38,905/CST][main][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:15:38,914/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:15:38,960/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:15:38,961/CST][main][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:15:38,962/CST][main][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:16:08,963/CST][Service Center Task][WARN]sc task interval changed from -1 to 30 org.apache.servicecomb.serviceregistry.task.ServiceCenterTaskMonitor.beginCycle(ServiceCenterTaskMonitor.java:39)
+[2018-06-01 11:16:08,964/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:16:08,970/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:16:08,975/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:16:08,976/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:16:08,977/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:16:39,903/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:16:39,908/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:16:39,914/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:16:39,916/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:16:39,916/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:17:09,906/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:17:09,913/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:17:09,922/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:17:09,923/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:17:09,923/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:17:39,905/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:17:39,917/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:17:39,922/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:17:39,923/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:17:39,924/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:18:09,906/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:18:09,916/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:18:09,921/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:18:09,921/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:18:09,922/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:18:39,902/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:18:39,909/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:18:39,914/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:18:39,915/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:18:39,915/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:19:09,902/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:19:09,911/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:19:09,916/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:19:09,917/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:19:09,918/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:19:39,902/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:19:39,908/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:19:39,913/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:19:39,914/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:19:39,914/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:20:09,905/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:20:09,915/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:20:09,919/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:20:09,920/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:20:09,920/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:20:39,905/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:20:39,911/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:20:39,917/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:20:39,918/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:20:39,918/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:21:09,906/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:21:09,914/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:21:09,921/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:21:09,921/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:21:09,922/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:21:39,903/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:21:39,917/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:21:39,922/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:21:39,923/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:21:39,924/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:22:09,901/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:22:09,907/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:22:09,913/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:22:09,914/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:22:09,914/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:22:39,900/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:22:39,910/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:22:39,916/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:22:39,917/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:22:39,917/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:23:09,905/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:23:09,913/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:23:09,929/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:23:09,931/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:23:09,933/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:23:39,905/CST][Service Center Task][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:23:39,914/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:23:39,921/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:23:39,921/CST][Service Center Task][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:23:39,922/CST][Service Center Task][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:23:41,809/CST][Thread-4][INFO]Closing org.springframework.context.support.ClassPathXmlApplicationContext@6442b0a6: startup date [Fri Jun 01 11:15:34 CST 2018]; root of context hierarchy org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:987)
+[2018-06-01 11:23:41,809/CST][Thread-3][WARN]handler chain is shutting down org.apache.servicecomb.core.handler.ShutdownHookHandler.run(ShutdownHookHandler.java:84)
+[2018-06-01 11:23:41,811/CST][Thread-3][WARN]handler chain is shut down org.apache.servicecomb.core.handler.ShutdownHookHandler.run(ShutdownHookHandler.java:95)
+[2018-06-01 11:23:41,811/CST][Thread-4][WARN]cse is closing now... org.apache.servicecomb.core.CseApplicationListener.onApplicationEvent(CseApplicationListener.java:149)
+[2018-06-01 11:23:41,812/CST][Thread-4][INFO]service center task is shutdown. org.apache.servicecomb.serviceregistry.registry.RemoteServiceRegistry.onShutdown(RemoteServiceRegistry.java:72)
+[2018-06-01 11:23:41,820/CST][Thread-4][WARN]Bad Request org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.unregisterMicroserviceInstance(ServiceRegistryClientImpl.java:471)
+[2018-06-01 11:23:41,820/CST][Thread-4][ERROR]Unregister microservice instance failed. microserviceId=null instanceId=null org.apache.servicecomb.serviceregistry.registry.AbstractServiceRegistry.unregisterInstance(AbstractServiceRegistry.java:232)
+[2018-06-01 11:28:41,547/CST][main][ERROR]Can not output merged.log4j.properties,because can not write to directory of file file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-common-1.0.0-m1.jar!/config/base/log4j.properties org.apache.servicecomb.foundation.common.utils.Log4jUtils.outputFile(Log4jUtils.java:95)
+[2018-06-01 11:28:41,601/CST][main][INFO]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6442b0a6: startup date [Fri Jun 01 11:28:41 CST 2018]; root of context hierarchy org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582)
+[2018-06-01 11:28:41,705/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/META-INF/spring/pojo.server.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:28:41,854/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/transport-rest-client-1.0.0-m1.jar!/META-INF/spring/cse.transport.rest.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:28:41,895/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/java-chassis-core-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:28:42,626/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-config-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:28:42,652/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-vertx-1.0.0-m1.jar!/META-INF/spring/cse.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:28:42,678/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-common-1.0.0-m1.jar!/META-INF/spring/common.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:28:42,702/CST][main][INFO]Loading XML bean definitions from URL [jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/lib/foundation-metrics-1.0.0-m1.jar!/META-INF/spring/metrics.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+[2018-06-01 11:28:43,122/CST][main][WARN]No URLs will be polled as dynamic configuration sources. com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121)
+[2018-06-01 11:28:43,122/CST][main][INFO]To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath. com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:122)
+[2018-06-01 11:28:43,131/CST][main][INFO]create dynamic config: org.apache.servicecomb.config.ConfigUtil.createDynamicConfig(ConfigUtil.java:169)
+[2018-06-01 11:28:43,234/CST][main][INFO]create local config: org.apache.servicecomb.config.ConfigUtil.createLocalConfig(ConfigUtil.java:87)
+[2018-06-01 11:28:43,234/CST][main][INFO] jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/microservice.yaml. org.apache.servicecomb.config.ConfigUtil.createLocalConfig(ConfigUtil.java:89)
+[2018-06-01 11:28:43,257/CST][main][INFO]Can not get the SPI service, the interface type is: interface org.apache.servicecomb.config.spi.ConfigCenterConfigurationSource org.apache.servicecomb.foundation.common.utils.SPIServiceUtils.getTargetService(SPIServiceUtils.java:54)
+[2018-06-01 11:28:43,258/CST][main][INFO]config center SPI service can not find, skip to load configuration from config center org.apache.servicecomb.config.ConfigUtil.createConfigFromConfigCenter(ConfigUtil.java:154)
+[2018-06-01 11:28:43,797/CST][main][INFO]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:155)
+[2018-06-01 11:28:44,267/CST][main][INFO]Found swagger generator context: org.apache.servicecomb.swagger.generator.pojo.PojoSwaggerGeneratorContext org.apache.servicecomb.swagger.generator.core.CompositeSwaggerGeneratorContext.<init>(CompositeSwaggerGeneratorContext.java:39)
+[2018-06-01 11:28:44,283/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.CseResponseProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:28:44,283/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.CompletableFutureProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:28:44,284/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.producer.DefaultProducerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.producer.ProducerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:28:44,290/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.CseResponseConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:28:44,374/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.CompletableFutureConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:28:44,375/CST][main][INFO]found factory org.apache.servicecomb.swagger.invocation.response.consumer.DefaultConsumerResponseMapperFactory of org.apache.servicecomb.swagger.invocation.response.consumer.ConsumerResponseMapperFactory: org.apache.servicecomb.swagger.invocation.response.ResponseMapperFactorys.lambda$new$0(ResponseMapperFactorys.java:41)
+[2018-06-01 11:28:44,502/CST][main][INFO]load microservice config, name=codefirst, paths=[jar:file:/Volumes/256G/imlidian/rpc_performance_test/demo-pojo/pojo-server/target/servicecomb-pojo-server-round-2.jar!/microservice.yaml] org.apache.servicecomb.serviceregistry.definition.MicroserviceDefinition.logConfigPath(MicroserviceDefinition.java:142)
+[2018-06-01 11:28:44,554/CST][main][INFO]It is running in the normal mode, a separated service registry is required org.apache.servicecomb.serviceregistry.registry.ServiceRegistryFactory.create(ServiceRegistryFactory.java:81)
+[2018-06-01 11:28:44,577/CST][main][INFO]add network interface name:wc6,host address:169.254.80.44 org.apache.servicecomb.foundation.common.net.NetUtils.doGetIpv4AddressFromNetworkInterface(NetUtils.java:114)
+[2018-06-01 11:28:44,578/CST][main][INFO]add network interface name:en1,host address:192.168.43.114 org.apache.servicecomb.foundation.common.net.NetUtils.doGetIpv4AddressFromNetworkInterface(NetUtils.java:114)
+[2018-06-01 11:28:44,638/CST][main][INFO]add host name from localhost:DeanMacbook,host address:192.168.43.114 org.apache.servicecomb.foundation.common.net.NetUtils.<clinit>(NetUtils.java:72)
+[2018-06-01 11:28:45,529/CST][main][INFO]executor group 2, thread per group 4. org.apache.servicecomb.core.executor.FixedThreadExecutor.<init>(FixedThreadExecutor.java:54)
+[2018-06-01 11:28:45,836/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.existUser.email in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:28:45,853/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.getUser.id in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:28:45,855/CST][main][INFO]generate benchmark.bean.Page_benchmark.bean.User_ in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:28:45,860/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.listUser.pageNo in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:28:45,907/CST][main][INFO]generate cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf in classLoader sun.misc.Launcher$AppClassLoader@75b84c92. org.apache.servicecomb.common.javassist.JavassistUtils.createClass(JavassistUtils.java:207)
+[2018-06-01 11:28:46,120/CST][main][INFO]generate swagger for codefirsttest/codefirst/codeFirstHello, swagger: ---
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "swagger definition for org.apache.servicecomb.demo.pojo.server.CodeFirstPojoHelloImpl"
+  x-java-interface: "cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf"
+basePath: "/CodeFirstPojoHelloImpl"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /existUser:
+    post:
+      operationId: "existUser"
+      parameters:
+      - in: "body"
+        name: "email"
+        required: false
+        schema:
+          $ref: "#/definitions/existUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "boolean"
+  /getUser:
+    post:
+      operationId: "getUser"
+      parameters:
+      - in: "body"
+        name: "id"
+        required: false
+        schema:
+          $ref: "#/definitions/getUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/User"
+  /createUser:
+    post:
+      operationId: "createUser"
+      parameters:
+      - in: "body"
+        name: "user"
+        required: false
+        schema:
+          $ref: "#/definitions/User"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            type: "boolean"
+  /listUser:
+    post:
+      operationId: "listUser"
+      parameters:
+      - in: "body"
+        name: "pageNo"
+        required: false
+        schema:
+          $ref: "#/definitions/listUserBody"
+      responses:
+        200:
+          description: "response of 200"
+          schema:
+            $ref: "#/definitions/PageUser"
+definitions:
+  User:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+      sex:
+        type: "integer"
+        format: "int32"
+      birthday:
+        type: "string"
+        format: "date-time"
+      email:
+        type: "string"
+      mobile:
+        type: "string"
+      address:
+        type: "string"
+      icon:
+        type: "string"
+      permissions:
+        type: "array"
+        items:
+          type: "integer"
+          format: "int32"
+      status:
+        type: "integer"
+        format: "int32"
+      createTime:
+        type: "string"
+        format: "date-time"
+      updateTime:
+        type: "string"
+        format: "date-time"
+    x-java-class: "benchmark.bean.User"
+  existUserBody:
+    type: "object"
+    properties:
+      email:
+        type: "string"
+  getUserBody:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+  Page:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+      total:
+        type: "integer"
+        format: "int32"
+      result:
+        type: "array"
+        items:
+          type: "object"
+    x-java-class: "benchmark.bean.Page"
+  PageUser:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+      total:
+        type: "integer"
+        format: "int32"
+      result:
+        type: "array"
+        items:
+          $ref: "#/definitions/User"
+    x-java-class: "benchmark.bean.Page<benchmark.bean.User>"
+  listUserBody:
+    type: "object"
+    properties:
+      pageNo:
+        type: "integer"
+        format: "int32"
+ org.apache.servicecomb.core.definition.schema.ProducerSchemaFactory.createSchema(ProducerSchemaFactory.java:114)
+[2018-06-01 11:28:46,134/CST][main][INFO]register schema codefirsttest/codefirst/codeFirstHello org.apache.servicecomb.core.definition.loader.SchemaLoader.registerSchema(SchemaLoader.java:91)
+[2018-06-01 11:28:46,155/CST][main][INFO]found DiscoveryFilter: org.apache.servicecomb.serviceregistry.discovery.DiscoveryTree.sort(DiscoveryTree.java:53)
+[2018-06-01 11:28:46,156/CST][main][INFO]DiscoveryFilter org.apache.servicecomb.core.filter.EndpointDiscoveryFilter. org.apache.servicecomb.serviceregistry.discovery.DiscoveryTree.sort(DiscoveryTree.java:55)
+[2018-06-01 11:28:46,232/CST][main][WARN]address /0.0.0.0:8080, auto select a host address to publish 192.168.43.114:8080, maybe not the correct one org.apache.servicecomb.serviceregistry.RegistryUtils.genPublishIpPort(RegistryUtils.java:181)
+[2018-06-01 11:28:46,252/CST][main][INFO]choose org.apache.servicecomb.transport.rest.vertx.VertxRestTransport for rest. org.apache.servicecomb.core.transport.TransportManager.chooseOneTransport(TransportManager.java:84)
+[2018-06-01 11:28:46,252/CST][main][INFO]choose org.apache.servicecomb.transport.highway.HighwayTransport for highway. org.apache.servicecomb.core.transport.TransportManager.chooseOneTransport(TransportManager.java:84)
+[2018-06-01 11:28:46,299/CST][transport-vert.x-eventloop-thread-2][INFO]Found HttpServerFilter: org.apache.servicecomb.common.rest.filter.inner.ServerRestArgsFilter. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.<init>(AbstractVertxHttpDispatcher.java:40)
+[2018-06-01 11:28:46,300/CST][transport-vert.x-eventloop-thread-2][INFO]Found HttpServerFilter: org.apache.servicecomb.common.rest.filter.tracing.TracingFilter. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.<init>(AbstractVertxHttpDispatcher.java:40)
+[2018-06-01 11:28:46,302/CST][transport-vert.x-eventloop-thread-2][INFO]init vertx http dispatcher org.apache.servicecomb.transport.rest.vertx.VertxRestDispatcher org.apache.servicecomb.transport.rest.vertx.RestServerVerticle.initDispatcher(RestServerVerticle.java:97)
+[2018-06-01 11:28:46,309/CST][transport-vert.x-eventloop-thread-2][INFO]set uploads directory to null. org.apache.servicecomb.transport.rest.vertx.AbstractVertxHttpDispatcher.createBodyHandler(AbstractVertxHttpDispatcher.java:53)
+[2018-06-01 11:28:46,471/CST][transport-vert.x-eventloop-thread-2][INFO]rest listen success. address=0.0.0.0:8080 org.apache.servicecomb.transport.rest.vertx.RestServerVerticle.lambda$startListen$0(RestServerVerticle.java:105)
+[2018-06-01 11:28:46,472/CST][main][INFO]endpoint to publish: rest://192.168.43.114:8080 org.apache.servicecomb.core.transport.TransportManager.init(TransportManager.java:58)
+[2018-06-01 11:28:46,498/CST][transport-vert.x-eventloop-thread-6][WARN]highway listen address is not configured, will not listen. org.apache.servicecomb.transport.highway.HighwayServerVerticle.startListen(HighwayServerVerticle.java:64)
+[2018-06-01 11:28:46,518/CST][main][INFO]add schema to service paths. codefirsttest:codefirst:codeFirstHello. org.apache.servicecomb.common.rest.locator.ServicePathManager.addSchema(ServicePathManager.java:91)
+[2018-06-01 11:28:46,519/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/getUser/], method=[POST], produces=[application/json]}" onto public abstract benchmark.bean.User cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.getUser(cse.gen.codefirsttest.codefirst.codeFirstHello.getUser.id) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-06-01 11:28:46,520/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/createUser/], method=[POST], produces=[application/json]}" onto public abstract java.lang.Boolean cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.createUser(benchmark.bean.User) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-06-01 11:28:46,520/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/existUser/], method=[POST], produces=[application/json]}" onto public abstract java.lang.Boolean cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.existUser(cse.gen.codefirsttest.codefirst.codeFirstHello.existUser.email) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-06-01 11:28:46,520/CST][main][INFO]Swagger mapped "{[/CodeFirstPojoHelloImpl/listUser/], method=[POST], produces=[application/json]}" onto public abstract benchmark.bean.Page cse.gen.codefirsttest.codefirst.codeFirstHello.CodeFirstPojoHelloImplIntf.listUser(cse.gen.codefirsttest.codefirst.codeFirstHello.listUser.pageNo) org.apache.servicecomb.common.rest.locator.MicroservicePaths.printPath(MicroservicePaths.java:103)
+[2018-06-01 11:28:46,525/CST][main][INFO]running microservice register task. org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:57)
+[2018-06-01 11:28:46,533/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.GetExistenceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 128, RegEx: ^[0-9]*$|^[0-9]+(\.[0-9]+)*\+{0,1}$|^[0-9]+(\.[0-9]+)*-[0-9]+(\.[0-9]+)*$|^latest$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:28:46,574/CST][registry-vert.x-eventloop-thread-0][WARN]get response for org.apache.servicecomb.serviceregistry.api.response.CreateServiceResponse failed, 400:Bad Request, Version validate failed, rule: { Min: 1, Max: 64, RegEx: ^[0-9]+(\.[0-9]+)*$ } org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.lambda$null$0(ServiceRegistryClientImpl.java:118)
+[2018-06-01 11:28:46,575/CST][main][ERROR]Registry microservice failed. appId=codefirsttest, name=codefirst, version=0.0.2git org.apache.servicecomb.serviceregistry.task.MicroserviceRegisterTask.doRegister(MicroserviceRegisterTask.java:77)
+[2018-06-01 11:28:46,576/CST][main][INFO]read MicroserviceRegisterTask status is READY org.apache.servicecomb.serviceregistry.task.ServiceCenterTask.onRegisterTask(ServiceCenterTask.java:51)
+[2018-06-01 11:28:49,434/CST][Thread-4][INFO]Closing org.springframework.context.support.ClassPathXmlApplicationContext@6442b0a6: startup date [Fri Jun 01 11:28:41 CST 2018]; root of context hierarchy org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:987)
+[2018-06-01 11:28:49,434/CST][Thread-3][WARN]handler chain is shutting down org.apache.servicecomb.core.handler.ShutdownHookHandler.run(ShutdownHookHandler.java:84)
+[2018-06-01 11:28:49,435/CST][Thread-3][WARN]handler chain is shut down org.apache.servicecomb.core.handler.ShutdownHookHandler.run(ShutdownHookHandler.java:95)
+[2018-06-01 11:28:49,435/CST][Thread-4][WARN]cse is closing now... org.apache.servicecomb.core.CseApplicationListener.onApplicationEvent(CseApplicationListener.java:149)
+[2018-06-01 11:28:49,436/CST][Thread-4][INFO]service center task is shutdown. org.apache.servicecomb.serviceregistry.registry.RemoteServiceRegistry.onShutdown(RemoteServiceRegistry.java:72)
+[2018-06-01 11:28:49,443/CST][Thread-4][WARN]Bad Request org.apache.servicecomb.serviceregistry.client.http.ServiceRegistryClientImpl.unregisterMicroserviceInstance(ServiceRegistryClientImpl.java:471)
+[2018-06-01 11:28:49,444/CST][Thread-4][ERROR]Unregister microservice instance failed. microserviceId=null instanceId=null org.apache.servicecomb.serviceregistry.registry.AbstractServiceRegistry.unregisterInstance(AbstractServiceRegistry.java:232)
